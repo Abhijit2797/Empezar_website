@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: DM Serif Display;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(223, 222, 222);
+}
+/* navbar */
+nav {
+  background-color: rgb(16, 11, 15);
+  padding: 50px 100px 20px 100px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  transition: a 0.5s ease-in-out;
+}
+nav a:hover {
+  border-bottom: 2px solid rgb(190, 10, 46);
+}
+
+/* hero section*/
+#hero {
+  background-image: url(../images/background\ image.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hero h1 {
+  font-size: 60px;
+  text-align: left;
+  margin-top: 350px;
+  margin-right: 377px;
+  color: white;
+}
+#hero .cta {
+  display: inline-flex;
+  align-self: center;
+  padding: 10px 30px;
+  margin-right: 730px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+
+  letter-spacing: 1rem;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+#hero .cta:hover {
+  color: white;
+  background-color: crimson;
+}
+
+/* end hero section*/
+#mundra {
+  display: flex;
+}
+#mundra .logistics {
+  background-color: rgb(204, 163, 0);
+  flex: 0.5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+#mundra .warehouse {
+  background-color: #0d1d2d;
+  flex: 0.5;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+#mundra h2 {
+  font-size: 30px;
+  font-family: georgia;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  color: white;
+}
+#mundra p {
+  font-size: 25px;
+  font-family: Times New Roman;
+  color: white;
+  text-align: center;
+}
+
+.btn--approach {
+  background-color: #0d1d2d;
+  border-radius: 50px;
+  color: white;
+  padding: 25px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.btn--approach:hover {
+  border: 1px solid #0d1d2d;
+  color: #0d1d2d;
+  background-color: transparent;
+}
+
+.btn--services {
+  background-color: rgb(190, 10, 46);
+  border-radius: 50px;
+  padding: 25px 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.btn--services:hover {
+  border: 1px solid rgb(190, 10, 46);
+  color: rgb(190, 10, 46);
+  background-color: transparent;
+}
+/* features */
+.CFS {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+}
+
+.CFS img {
+  width: 44%;
+  height: 92%;
+  border-radius: 30/2;
+  padding: 50px;
+  margin-left: 40px;
+}
+.CFS:nth-of-type(even) img {
+  order: 2;
+}
+.CFS h4 {
+  font-size: 35px;
+  color: rgb(99, 28, 41);
+  font-family: sans-serif;
+  margin-top: 150px;
+}
+
+.CFS p {
+  font-size: 25px;
+  margin-top: 70px;
+  margin-right: 100px;
+}
+
+/* contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.contact .info {
+  max-width: 700px;
+  text-align: center;
+}
+.contact h3 {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1rem;
+  color: rgb(4, 0, 7);
+  padding-top: 90px;
+}
+.contact p {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: rgb(190, 10, 46);
+  word-spacing: 7px;
+}
+
+.contact .info .details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contact .info .details .line {
+  background-color: rgb(190, 10, 46);
+  height: auto;
+  width: 2px;
+}
+
+.contact .info .details h4 {
+  color: rgb(4, 0, 7);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact .info .details a {
+  color: rgb(190, 10, 46);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.contact .info .details p {
+  color: rgb(190, 10, 46);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+}
